@@ -1,0 +1,8 @@
+<table>
+  <%= simple_form_for :message, url: messages_path do |f| %>
+    <%= f.input :recipient, placeholder: 'recipient@email.com' %>
+    <%= f.input :subject, placeholder: 'Subject' %>
+    <%= f.input :message, as: :text %>
+    <%= f.button :submit, 'Send' %>
+  <% end %>
+</table>
